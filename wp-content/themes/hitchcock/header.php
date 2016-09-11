@@ -14,7 +14,9 @@
 	<body <?php body_class(); ?>>
 		
 		<div class="navigation">
-			
+			<?php 
+/*
+comment out section-inner
 			<div class="section-inner">
 				
 				<ul class="main-menu">
@@ -50,6 +52,9 @@
 				<div class="clear"></div>
 				
 			</div> <!-- /section-inner -->
+end of comment out section-inner
+*/ 
+?>
 			
 			<div class="nav-toggle">
 					
