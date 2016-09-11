@@ -84,6 +84,8 @@
 						$next_post = get_next_post();
 					?>
 					
+<?php
+/* comment out post-nav
 					<div class="post-navigation">
 						
 						<?php
@@ -106,9 +108,10 @@
 						<?php endif; ?>
 						
 						<div class="clear"></div>
-					
+
 					</div> <!-- /post-navigation -->
-				
+end of comment out post-nav			*/?>
+
 				</div> <!-- /post-inner -->
 				
 				<?php comments_template( '', true ); ?>
