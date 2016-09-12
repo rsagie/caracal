@@ -183,7 +183,7 @@ if($HeightLook == 1){$LooksCount++;}
 if($RowLook == 1){$LooksCount++;}
  
 if($AllowSort == 1 OR $LooksCount>1){
-echo "<div style='display:block !important;color:black;line-height: 20px !important;font-size:18px !important;padding-bottom:8px;height:46px !important;'>";
+//echo "<div style='display:block !important;color:black;line-height: 20px !important;font-size:18px !important;padding-bottom:8px;height:46px !important;'>";
 if($AllowSort == 1){
 
 //echo "<br>siteURL: $siteURL<br>";
