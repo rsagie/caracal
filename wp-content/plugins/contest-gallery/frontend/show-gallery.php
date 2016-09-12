@@ -253,6 +253,8 @@ echo "</div>";
 
 //print_r($orderGalleries);
 
+/*hide gallery-layouts 
+
 if(count($orderGalleries)>1){
 	
 			echo "<div style='display:inline;vertical-align:top;float:left;padding-top:0px;padding-bottom:30px;height:20px !important;line-height: 20px !important;'>";
@@ -299,7 +301,8 @@ if(count($orderGalleries)>1){
 echo "</div>";	
 	
 }
-
+end of hide gallery-layouts
+*/
 echo "</div>";
 
 }
