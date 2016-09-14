@@ -381,7 +381,7 @@ echo "<input type='hidden' value='$BulkUploadMinQuantity' id='BulkUploadMinQuant
 </noscript>	*/
 
 echo "<label for='cg_bh' id='upload_btn'>+</label>";
-echo "<div id='upload_div' style='visibility:hidden;>";
+echo "<div id='upload_div'>";
 
 echo "<div id='ausgabe1' style='visibility:hidden; text-align:left;color:#000;'>";
 
