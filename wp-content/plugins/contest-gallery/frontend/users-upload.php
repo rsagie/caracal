@@ -2,6 +2,33 @@
 <div style="border: 1px solid purple; padding: 10px">
 <span style="color:red">Enable JavaScript to use the form</span>
 </div>
+<style>
+#upload_btn {
+  position: fixed;
+    bottom: 60px;
+    right: 198px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #3bc492;
+    color: #fff;
+    text-align: center;
+    line-height: 41px;
+    font-size: 20px;
+}
+
+#upload_div{
+	z-index: 20;
+    position: fixed;
+    background: white;
+    top: 30px;
+    box-shadow: -1px 5px 21px #888888;
+    display:none;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px
+}
+</style>
 </noscript>
 <?php
 
@@ -351,6 +378,9 @@ echo "<input type='hidden' value='$BulkUploadMinQuantity' id='BulkUploadMinQuant
 </div>
 </noscript>	*/
 
+echo "<label for="cg_bh" id="upload_btn">+</label>"
+echo "<div id='upload_div' style='visibility:hidden;>";
+
 echo "<div id='ausgabe1' style='visibility:hidden; text-align:left;color:#000;'>";
 
 
@@ -397,7 +427,7 @@ $i=0;
 	
 
 					echo "<div style='text-align:left;' id='cg-upload-$Field_Order'><div style='display:inline;font-size:18px;'>$titel *<br/></div>";
-					echo "<input type='file' class='bh' id='cg_bh' $SingleBulkUploadConfiguration />";// Content Feld
+					echo "<input type='file' style='visibility:hidden' class='bh' id='cg_bh' $SingleBulkUploadConfiguration />";// Content Feld
 					//echo "<input type='submit' value='Upload' />";
 					echo "<p class='append'></p>";// Fehlermeldung erscheint hier
 					echo "</div>";
@@ -522,7 +552,9 @@ echo '<input type="submit" name="submit" id="cg_users_upload_submit" value="'.$l
 //echo "</div>";
 echo '</form>';
 echo "</div>";
-echo "</div>";// Zum schlieﬂen des obersten Divs #ausgabe1, ist auf hidden wegen javascript
+echo "</div> <!-- ausgabe1 --> ";// Zum schlieﬂen des obersten Divs #ausgabe1, ist auf hidden wegen javascript
+
+echo "</div><!-- upload_div -->";
 
 echo "<br/>";
 
