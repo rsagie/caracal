@@ -116,6 +116,8 @@ if(!filename){
 	var cg_no_picture_is_choosed = $("#cg_no_picture_is_choosed").val();
 	$(".bh").parent().find('.append').append('<p style="font-size:14px;">'+cg_no_picture_is_choosed+'</p>');
 	 e.preventDefault();
+}else{
+	document.getElementById('upload_div').style.display = 'block'; //"none"
 }
 
 
