@@ -1,7 +1,3 @@
-<noscript>
-<div style="border: 1px solid purple; padding: 10px">
-<span style="color:red">Enable JavaScript to use the form</span>
-</div>
 <style>
 #upload_btn {
   position: fixed;
@@ -29,6 +25,12 @@
     margin-left: -300px
 }
 </style>
+
+<noscript>
+<div style="border: 1px solid purple; padding: 10px">
+<span style="color:red">Enable JavaScript to use the form</span>
+</div>
+
 </noscript>
 <?php
 
