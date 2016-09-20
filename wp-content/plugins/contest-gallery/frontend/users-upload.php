@@ -500,7 +500,7 @@ $i=0;
 				$checkIfNeed = ($value=='on') ? 'on' : '' ;
 				}
 			}
-			echo "<div id='cg-upload-$Field_Order'><div style='display:inline;float:left;font-size:18px;'>$titel $necessary</div>";
+			echo "<div id='cg-upload-$Field_Order'><div style='display:inline;float:right;font-size:18px;'>$titel $necessary</div>";
 			echo "<input type='hidden' name='form_input[]'  value='ef'><input type='hidden' name='form_input[]' value='$id'><br/>";//Formart und FormfeldID hidden
 			echo "<input type='hidden' name='form_input[]'  value='$Field_Order'>";// Feldreihenfolge wird mitgegeben
 			echo "<input type='text' value='' class='ef' style='width:100%;' name='form_input[]'>";// Content Feld, länge wird überprüft
@@ -527,7 +527,7 @@ $i=0;
 				}
 			}
 
-			echo "<div id='cg-upload-$Field_Order'><div style='display:inline;float:left;font-size:18px;'>$titel $necessary</div>";
+			echo "<div id='cg-upload-$Field_Order'><div style='display:inline;float:right;font-size:18px;'>$titel $necessary</div>";
 			echo "<input type='hidden' name='form_input[]'  value='kf'><input type='hidden' name='form_input[]' value='$id'><br/>";// Formart und FormfeldID hidden
 			echo "<input type='hidden' name='form_input[]'  value='$Field_Order'>";// Feldreihenfolge wird mitgegeben
 			echo "<textarea maxlength='1000' class='kf' name='form_input[]'  style='width:100%;' rows='10' ></textarea>";// Content Feld, länge wird überprüft
