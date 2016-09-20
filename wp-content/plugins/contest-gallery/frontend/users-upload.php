@@ -41,6 +41,22 @@
 body.modal-open {
     overflow: hidden;
 }
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 </style>
 
 <noscript>
@@ -400,6 +416,8 @@ echo "<input type='hidden' value='$BulkUploadMinQuantity' id='BulkUploadMinQuant
 echo "<label for='cg_bh' id='upload_btn'>+</label>";
 echo "<div class='modal'>";
 echo "<div id='upload_div'>";
+echo "<span class='close'>x</span>";
+
 
 echo "<div id='ausgabe1' style='visibility:hidden; text-align:right;color:#000;'>";
 

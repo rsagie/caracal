@@ -110,6 +110,17 @@ var filename = filename = $('input[type=file]').val().split('\\').pop();
 // alert('filename: '+filename);
 
 
+var modal = document.getElementsByClassName("modal")[0];
+var upload_div = document.getElementById('upload_div');
+var close_span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+close_span.onclick = function() {
+    modal.style.display = "none";
+	upload_div.style.display = "none";
+}
+
 
 if(!filename){
 	$( this ).parent().find('.append p').remove();
@@ -117,8 +128,8 @@ if(!filename){
 	$(".bh").parent().find('.append').append('<p style="font-size:14px;">'+cg_no_picture_is_choosed+'</p>');
 	 e.preventDefault();
 }else{
-	document.getElementById('upload_div').style.display = 'block'; //"none"
-	document.getElementsByClassName("modal")[0].style.display = 'block'; //"none"
+	upload_div.style.display = 'block'; 
+	modal.style.display = 'block';
 	document.getElementsByTagName("body")[0].setAttribute( 'class',"modal-open");
 
 }
