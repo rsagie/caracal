@@ -2,7 +2,7 @@
 #upload_btn {
   position: fixed;
     bottom: 60px;
-    right: 198px;
+    right: 15%;
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -14,6 +14,7 @@
 }
 
 .modal {
+
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -21,7 +22,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -33,11 +34,8 @@
     width: 80%; /* Could be more or less, depending on screen size */
 	z-index: 2;
     background: white;
-    top: 30px;
     box-shadow: -1px 5px 21px #888888;
     display:none;
-    left: 50%;
-    margin-left: -300px
 }
 
 body.modal-open {
