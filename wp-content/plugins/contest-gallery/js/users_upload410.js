@@ -118,6 +118,9 @@ if(!filename){
 	 e.preventDefault();
 }else{
 	document.getElementById('upload_div').style.display = 'block'; //"none"
+	document.getElementsByClassName("modal").style.display = 'block'; //"none"
+	$("body").addClass("modal-open");
+
 }
 
 
