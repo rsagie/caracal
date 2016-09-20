@@ -473,7 +473,7 @@ $i=0;
 				}
 			}
 			
-			echo "<div id='cg-upload-$Field_Order''><div style='display:inline;float:left;font-size:18px;'>$titel $necessary</div>";
+			echo "<div id='cg-upload-$Field_Order''><div style='display:inline;float:right;font-size:18px;'>$titel $necessary</div>";
 			echo "<input type='hidden' name='form_input[]' value='nf'><input type='hidden' name='form_input[]' value='$id'><br/>";// Formart und FormfeldID hidden
 			echo "<input type='hidden' name='form_input[]'  value='$Field_Order'>";// Feldreihenfolge wird mitgegeben
 			echo "<input type='text'  class='nf' value='' name='form_input[]' style='width:100%;'>";// Content Feld, länge wird überprüft
