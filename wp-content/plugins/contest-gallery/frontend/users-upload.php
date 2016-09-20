@@ -31,7 +31,7 @@
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; 
 	z-index: 2;
     background: white;
     box-shadow: -1px 5px 21px #888888;
@@ -401,7 +401,7 @@ echo "<label for='cg_bh' id='upload_btn'>+</label>";
 echo "<div class='modal'>";
 echo "<div id='upload_div'>";
 
-echo "<div id='ausgabe1' style='visibility:hidden; text-align:left;color:#000;'>";
+echo "<div id='ausgabe1' style='visibility:hidden; text-align:right;color:#000;'>";
 
 
 		// User ID Überprüfung ob es die selbe ist
@@ -446,7 +446,7 @@ $i=0;
 			
 	
 
-					echo "<div style='text-align:left;' id='cg-upload-$Field_Order'><div style='display:inline;font-size:18px;'>$titel *<br/></div>";
+					echo "<div style='text-align:right;' id='cg-upload-$Field_Order'><div style='display:inline;font-size:18px;'>$titel *<br/></div>";
 					echo "<input type='file' style='visibility:hidden' class='bh' id='cg_bh' $SingleBulkUploadConfiguration />";// Content Feld
 					//echo "<input type='submit' value='Upload' />";
 					echo "<p class='append'></p>";// Fehlermeldung erscheint hier
@@ -553,7 +553,7 @@ $i=0;
 
 			echo "<div id='cg-upload-$Field_Order'><div style='display:inline;float:left;font-size:18px;'>$titel * </div>";
 			echo "<input type='checkbox' class='cg-check-f' style='display:inline;'>";
-			echo "<div style='display:block;width:100%;float:left;text-align:left;'>$content</div><br/>";// Content Feld, länge wird überprüft
+			echo "<div style='display:block;width:100%;float:left;text-align:;'>$content</div><br/>";// Content Feld, länge wird überprüft
 			echo "<p class='append'></p>";// Fehlermeldung erscheint hier 
 			echo "</div>";
 			
@@ -567,7 +567,7 @@ $i=0;
 
 
 echo "";
-//echo "<div style='display:inline;width:100%;float:left;text-align:left;'>";
+//echo "<div style='display:inline;width:100%;float:left;text-align:right;'>";
 echo '<input type="submit" name="submit" id="cg_users_upload_submit" value="'.$language_Send.'" style="min-width:150px;">';
 //echo "</div>";
 echo '</form>';
