@@ -113,12 +113,15 @@ var filename = filename = $('input[type=file]').val().split('\\').pop();
 var modal = document.getElementsByClassName("modal")[0];
 var upload_div = document.getElementById('upload_div');
 var close_span = document.getElementsByClassName("close")[0];
-
+var body       = document.getElementsByTagName("body")[0];
+var input_file = document.getElementById('cg_bh');
 
 // When the user clicks on <span> (x), close the modal
 close_span.onclick = function() {
     modal.style.display = "none";
 	upload_div.style.display = "none";
+	body.className = body.className.replace(/\bmodal-open\b/,'');
+	input_file.value = "";
 }
 
 
@@ -130,7 +133,7 @@ if(!filename){
 }else{
 	upload_div.style.display = 'block'; 
 	modal.style.display = 'block';
-	document.getElementsByTagName("body")[0].setAttribute( 'class',"modal-open");
+	body.setAttribute( 'class',"modal-open");
 
 }
 
