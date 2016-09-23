@@ -1,7 +1,19 @@
+<style>
+.img_title{
+	position:absolute;
+	top:0px;
+	background: rgba(0, 0, 0, 0.4);
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-right:6px;
+	cursor:pointer;
+	text-align:right;
+}
+</style>
 <?php
-
-$AllowRating=0;
-$AllowComments=0;
 					//echo "<div id='fb-like-div' style='float:left;display:inline;width:76px !important;height:50px !important;margin-left:20px;'>";
 					
 					
@@ -144,21 +156,21 @@ echo <<<HEREDOC
  <div id="cg_menu">
     <ul>
       <li class="cg_topmenu">
-        <a href="">Menü 1</a>
+        <a href="">Menu 1</a>
         <ul>
           <li class="cg_submenu"><a href=""><img src="$thumbViewPic"></a></li>
           <li class="cg_submenu"><a href="">Unterpunkt 1.2</a></li>
         </ul>
       </li>
       <li class="cg_topmenu">
-        <a href="">Menü 2</a>
+        <a href="">Menu 2</a>
         <ul>
           <li class="cg_submenu"><a href="">Unterpunkt 2.1</a></li>
           <li class="cg_submenu"><a href="">Unterpunkt 2.2</a></li>
         </ul>
       </li>
       <li class="cg_topmenu">
-        <a href="">Menü 3</a>
+        <a href="">Menu 3</a>
         <ul>
           <li class="cg_submenu"><a href="">Unterpunkt 3.1</a></li>
           <li class="cg_submenu"><a href="">Unterpunkt 3.2</a></li>
@@ -1115,7 +1127,7 @@ if(@$Field1IdGalleryView and @$Field1IdGalleryView!=0){
 				}
 				
 				echo "<a href='$cg_img_url' $cg_gallery_contest_target title='Go to $cg_img_url' >";		
-				echo "<div  style='position:absolute;top:0px;background: rgba(0, 0, 0, 0.8);font-size:18px;color:white;font-weight:bold;padding-top:3px;padding-bottom:3px;padding-left:3px;cursor:pointer;' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
+				echo "<div class='img_title' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
 				echo "<div>";
 				echo @$cgFormFieldContent."1";
 				//echo $uploads."/".$Timestamp.$NamePic.$ImgType;  				
@@ -1128,7 +1140,7 @@ if(@$Field1IdGalleryView and @$Field1IdGalleryView!=0){
 			
 			else{
 				
-				echo "<div style='position:absolute;top:0px;background: rgba(0, 0, 0, 0.8);font-size:18px;color:white;font-weight:bold;padding-top:3px;padding-bottom:3px;padding-left:3px;' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
+				echo "<div  class='img_title' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
 				echo "<div>";
 				echo @$cgFormFieldContent;
 				//echo $uploads."/".$Timestamp.$NamePic.$ImgType;  
@@ -1165,7 +1177,7 @@ if($AllowRating==1 or $AllowRating==2 or $AllowComments==1 or ($ThumbViewBorderR
 		
 	}
 		
-	echo "<div style='position:absolute;bottom:0px;background: rgba(0, 0, 0, 0.8);padding-top:3px;padding-bottom:3px;padding-left:3px;font-size:18px;clear: both;$cg_hide_cursor' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
+	echo "<div class='img_title' style='position:absolute;bottom:0px;' data-cage_id='$realId' $cg_hide_class id='cg_hide$r' >";
 //		echo "<a onClick='document.getElementById(\"cg-img-$id\").click()' >";//<img src='$urlTransparentPic' style='cursor: pointer;position:absolute;z-index:20;width:$WidthThumbPx;height:$HeightThumbPx;'>";
 //		echo "</a>";
 
@@ -1947,7 +1959,7 @@ if(@$Field1IdGalleryView and @$Field1IdGalleryView!=0){
 				}
 				
 				echo "<a href='$cg_img_url' $cg_gallery_contest_target title='Go to $cg_img_url' >";		
-				echo "<div style='position:absolute;top:0px;background: rgba(0, 0, 0, 0.8);font-size:18px;color:white;font-weight:bold;padding-top:3px;padding-bottom:3px;padding-left:3px;cursor:pointer;' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
+				echo "<div class='img_title' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
 				echo "<div>";
 				echo @$cgFormFieldContent;
 				//echo $uploads."/".$Timestamp.$NamePic.$ImgType;  
@@ -1960,7 +1972,7 @@ if(@$Field1IdGalleryView and @$Field1IdGalleryView!=0){
 			
 			else{
 				
-				echo "<div style='position:absolute;top:0px;background: rgba(0, 0, 0, 0.8);font-size:18px;color:white;font-weight:bold;padding-top:3px;padding-bottom:3px;padding-left:3px;' data-cg_image_id='$realId' class='cg_image$r' id='cg_Field1IdGalleryView$r' >";
+				echo "<div class='img_title' data-cg_image_id='$realId' class='cg_image$r' id='cg_Field1IdGalleryView$r' >";
 				echo "<div>";
 				echo @$cgFormFieldContent;
 				//echo $uploads."/".$Timestamp.$NamePic.$ImgType;
@@ -1997,7 +2009,7 @@ if($AllowRating==1 or $AllowRating==2 or $AllowComments==1 or ($RowViewBorderRad
 		
 	}
 		
-	//echo "<div style='position:absolute;bottom:0px;background: rgba(0, 0, 0, 0.8);padding-top:3px;padding-bottom:3px;padding-left:3px;font-size:18px;clear: both;$cg_hide_cursor' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
+	echo "<div class='img_title' style='position:absolute;bottom:0px;' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
 //		echo "<a onClick='document.getElementById(\"cg-img-$id\").click()' >";//<img src='$urlTransparentPic' style='cursor: pointer;position:absolute;z-index:20;width:$WidthThumbPx;height:$HeightThumbPx;'>";
 //		echo "</a>";
 
@@ -2667,7 +2679,7 @@ if(@$Field1IdGalleryView and @$Field1IdGalleryView!=0){
 				}
 				
 				echo "<a href='$cg_img_url' $cg_gallery_contest_target title='Go to $cg_img_url' >";		
-				echo "<div style='position:absolute;top:0px;background: rgba(0, 0, 0, 0.8);font-size:18px;color:white;font-weight:bold;padding-top:3px;padding-bottom:3px;padding-left:3px;cursor:pointer;' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
+				echo "<div class='img_title' data-cg_image_id='$realId' id='cg_Field1IdGalleryView$r' >";
 				echo "<div>";
 				echo @$cgFormFieldContent;
 				//echo $uploads."/".$Timestamp.$NamePic.$ImgType;  
@@ -2680,7 +2692,7 @@ if(@$Field1IdGalleryView and @$Field1IdGalleryView!=0){
 			
 			else{
 				
-				echo "<div style='position:absolute;top:0px;background: rgba(0, 0, 0, 0.8);font-size:18px;color:white;font-weight:bold;padding-top:3px;padding-bottom:3px;padding-left:3px;' data-cg_image_id='$realId' class='cg_image$r' id='cg_Field1IdGalleryView$r' >";
+				echo "<div class='img_title' data-cg_image_id='$realId' class='cg_image$r' id='cg_Field1IdGalleryView$r' >";
 				echo "<div>";
 				echo @$cgFormFieldContent;
 				//echo $uploads."/".$Timestamp.$NamePic.$ImgType;  
@@ -2717,7 +2729,7 @@ if($AllowRating==1 or $AllowRating==2 or $AllowComments==1 or ($HeightViewBorder
 		
 	}
 		
-	echo "<div style='position:absolute;bottom:0px;background: rgba(0, 0, 0, 0.8);padding-top:3px;padding-bottom:3px;padding-left:3px;font-size:18px;clear: both;$cg_hide_cursor' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
+	echo "<div class='img_title' style='position:absolute;bottom:0px;' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
 //		echo "<a onClick='document.getElementById(\"cg-img-$id\").click()' >";//<img src='$urlTransparentPic' style='cursor: pointer;position:absolute;z-index:20;width:$WidthThumbPx;height:$HeightThumbPx;'>";
 //		echo "</a>";
 
@@ -3034,7 +3046,7 @@ echo "</div>";*/
 	    
 		echo "<div style='display:inline;float:left;'>[ <strong><a href='$siteURL"."start=$i"."&choose=$rowImages&look=$look'>$anf-$end</a></strong> ]</div>";
 	  } 
-	  
+	   
 		elseif ($anf == $nr1) {
 			echo "<div style='display:inline;float:left;'>[ <strong> <a href='$siteURL"."start=$i"."&choose=$rowImages&look=$look'>$anf-$end</a></strong> ]</div>";
 	  } 
@@ -3048,7 +3060,7 @@ echo "</div>";*/
 	  }
 	 }
 
-
+ 
 
 */
 
