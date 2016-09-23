@@ -14,6 +14,8 @@
 }
 </style>
 <?php
+$AllowRating=0;
+$AllowComments=0;
 					//echo "<div id='fb-like-div' style='float:left;display:inline;width:76px !important;height:50px !important;margin-left:20px;'>";
 					
 					
