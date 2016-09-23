@@ -1,4 +1,7 @@
 <?php
+
+$AllowRating=0;
+$AllowComments=0;
 					//echo "<div id='fb-like-div' style='float:left;display:inline;width:76px !important;height:50px !important;margin-left:20px;'>";
 					
 					
@@ -1994,7 +1997,7 @@ if($AllowRating==1 or $AllowRating==2 or $AllowComments==1 or ($RowViewBorderRad
 		
 	}
 		
-	echo "<div style='position:absolute;bottom:0px;background: rgba(0, 0, 0, 0.8);padding-top:3px;padding-bottom:3px;padding-left:3px;font-size:18px;clear: both;$cg_hide_cursor' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
+	//echo "<div style='position:absolute;bottom:0px;background: rgba(0, 0, 0, 0.8);padding-top:3px;padding-bottom:3px;padding-left:3px;font-size:18px;clear: both;$cg_hide_cursor' data-cg_image_id='$realId' $cg_hide_class id='cg_hide$r' >";
 //		echo "<a onClick='document.getElementById(\"cg-img-$id\").click()' >";//<img src='$urlTransparentPic' style='cursor: pointer;position:absolute;z-index:20;width:$WidthThumbPx;height:$HeightThumbPx;'>";
 //		echo "</a>";
 
